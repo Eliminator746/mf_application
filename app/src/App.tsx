@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./global.css";
-import About from "./pages/About";
 import Home from "./pages/Home";
 import Layout1 from "./layout/Layout1";
+import Setting from "./pages/Setting";
+import Filter from "./pages/Filter";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout1 />}>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
+            <Route path="filter" element={<Filter />} />
+            <Route path="setting" element={<Setting />} />
           </Route>
         </Routes>
       </BrowserRouter>

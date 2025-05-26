@@ -1,4 +1,4 @@
-import { Home, PersonStanding } from "lucide-react"
+import { Filter, Home, Settings } from "lucide-react"
 import SmallSidebarItem from "../components/SmallSidebarItem"
 import '../styles/Sidebar.css'
 
@@ -9,8 +9,8 @@ const Sidebar = () => {
           className={`my-box `}
         >
           <SmallSidebarItem Icon={Home} url="/" />
-          <SmallSidebarItem Icon={PersonStanding} url="/about" />
-          <SmallSidebarItem Icon={Home} url="/" />          
+          <SmallSidebarItem Icon={Filter} url="/filter" />          
+          <SmallSidebarItem Icon={Settings} url="/setting" />
         </aside>
     </div>
   )
